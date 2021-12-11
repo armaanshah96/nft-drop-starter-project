@@ -1,0 +1,19 @@
+{
+  "name": "Arborist",
+  "symbol": "",
+  "image": "0.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "0.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "7FuAsbVy6PtVffhtsJR7EF3gqyZbJiPwgjKuHhX6ydbz",
+        "share": 100
+      }
+    ]
+  }
+}

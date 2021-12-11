@@ -1,0 +1,19 @@
+{
+  "name": "Horticulturist",
+  "symbol": "",
+  "image": "2.png",
+  "properties": {
+    "files": [
+      {
+        "uri": "2.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "7FuAsbVy6PtVffhtsJR7EF3gqyZbJiPwgjKuHhX6ydbz",
+        "share": 100
+      }
+    ]
+  }
+}
