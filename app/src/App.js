@@ -30,7 +30,7 @@ const App = () => {
   };
 
   const connectWallet = async () => {
-    if(window.solana) {
+    if (window.solana) {
       const response = await window.solana.connect();
       console.log("Public key is: ", response.publicKey.toString());
       setWalletAddress(response.publicKey.toString());
@@ -64,7 +64,7 @@ const App = () => {
           <p className="sub-text">NFT drop machine with fair mint</p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
-        {walletAddress && <CandyMachine walletAddress={window.solana}/>}
+        {walletAddress && <CandyMachine walletAddress={window.solana} />}
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a

@@ -2,7 +2,7 @@ import { programs } from "@metaplex/js";
 import { Program, Provider, web3 } from "@project-serum/anchor";
 import { MintLayout, Token, TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import { Connection, PublicKey } from "@solana/web3.js";
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import CountdownTimer from "../CountdownTimer";
 import "./CandyMachine.css";
 import {
@@ -35,6 +35,7 @@ const CandyMachine = ({ walletAddress }) => {
 
   useEffect(() => {
     getCandyMachineState();
+    // eslint-disable-next-line
   }, []);
 
   const getProvider = () => {
@@ -88,7 +89,7 @@ const CandyMachine = ({ walletAddress }) => {
       true
     );
 
-    if (data.length != 0) {
+    if (data.length !== 0) {
       for (const mint of data) {
         const response = await fetch(mint.data.uri);
         const parse = await response.json();
